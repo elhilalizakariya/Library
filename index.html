@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Book</th><th>ID</th><th>Author</th><th>Pages</th><th>Genre</th><th>Year</th>
+        </thead>
+        <tbody >
+            
+        </tbody>
+    </table>
+
+    <button command="show-modal" commandfor="add-book">Add new Book</button>
+
+    <dialog id="add-book" >
+        <form action="/" method="get" class="bookForm">
+            <h2>Add new Book</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author">
+            <label for="pages">Pages:</label>
+            <input type="text" id="pages" name="pages">
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre">
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year">
+            <button type="submit" id="submit-book">Add Book</button>
+            <button type="button" id="cancel-book">Cancel</button>
+        </form>
+        
+    </dialog>
+    
+</body>
+</html>
