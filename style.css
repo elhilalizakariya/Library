@@ -1,3 +1,119 @@
-tr, td, th{
-    border:2px solid black;
+ td, th{
+    	border: 2px solid #b77746;
+	padding: 0.25rem 0.75rem;
+    height: 40px;
+
+}
+
+table{
+    border-collapse: collapse;
+}
+
+dialog{
+      &::backdrop {
+    background: hsl(0 0 0 / .5);
+    backdrop-filter: blur(5px);
+  }
+
+  background-color: #faefe7;
+  border: 3px solid #5c2b06 ;
+  border-radius: 12px;
+  width: 300px;
+
+}
+
+.bookForm{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.input{
+    display:flex;
+    justify-content: space-around;
+}
+
+thead{
+    border-block-end: 2px solid;
+	background: #c6936d;
+
+}
+
+tbody tr:nth-child(even) {
+	background: color-mix(in srgb, #c6936d, transparent 60%);
+}
+
+body{
+    background-color: #faefe7;
+}
+
+.heading{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 2em;
+    font-weight: 800;
+    border-bottom: 5px solid #5c2b06 ;
+    margin-bottom: 100px;
+
+}
+
+.heading button{
+    height: 50px;
+    width: 130px;
+    background-color: #5c2b06;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #5c2b06;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: Inter,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.heading button:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+table{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.remove-button{
+    height: 50%; 
+    width: 80%;
+    color: red;
+    border-color: red;
+    
+
+}
+
+td:has(button) {
+  text-align: center;
+  vertical-align: middle;
 }

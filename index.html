@@ -8,32 +8,56 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="heading">
+        <div>My Library</div>
+        <div>
+                <button command="show-modal" commandfor="add-book">Add Book</button>
+        </div>
+    </div>
     <table>
         <thead>
             <th>Book</th><th>ID</th><th>Author</th><th>Pages</th><th>Genre</th><th>Year</th>
+            <th>Read</th><th>Remove</th><th>Toggle read</th>
         </thead>
         <tbody >
             
         </tbody>
     </table>
 
-    <button command="show-modal" commandfor="add-book">Add new Book</button>
+
 
     <dialog id="add-book" >
         <form action="/" method="get" class="bookForm">
             <h2>Add new Book</h2>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="author">Author:</label>
-            <input type="text" id="author" name="author">
-            <label for="pages">Pages:</label>
-            <input type="text" id="pages" name="pages">
-            <label for="genre">Genre:</label>
-            <input type="text" id="genre" name="genre">
-            <label for="year">Year:</label>
-            <input type="number" id="year" name="year">
-            <button type="submit" id="submit-book">Add Book</button>
-            <button type="button" id="cancel-book">Cancel</button>
+            <div class="input">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="input">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author">
+            </div>
+            <div class="input">
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" name="pages">
+            </div>
+            <div class="input">
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre">
+            </div>
+            <div class="input">
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year">
+            </div>
+            <div class="input">
+                <label for="read">Read:</label>
+                <input type="checkbox" id="read" name="read">
+            </div>
+            <div class="input">
+                <button type="submit" id="submit-book">Add Book</button>
+                <button type="button" id="cancel-book">Cancel</button>
+            </div>
+            
         </form>
         
     </dialog>
