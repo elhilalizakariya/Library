@@ -4,6 +4,7 @@ const myLibrary = [];
 
 
 class Book(){
+    
     constructor(name, author, pages, genre, year, read){
         this.name = name;
         this.id = crypto.randomUUID();
