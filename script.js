@@ -1,23 +1,26 @@
 const myLibrary = [];
 
 
-function Book(name, author, pages, genre, year, read){
-    this.name = name;
-    this.id = crypto.randomUUID();
-    this.author = author;
-    this.pages = pages;
-    this.genre = genre;
-    this.year = year;
-    this.read = read;
 
-        
 
-    
+class Book(){
+    constructor(name, author, pages, genre, year, read){
+        this.name = name;
+        this.id = crypto.randomUUID();
+        this.author = author;
+        this.pages = pages;
+        this.genre = genre;
+        this.year = year;
+        this.read = read;
+    }
+
+    changeReadStatus(){
+        this.read = !this.read;
+    }
+
 }
 
-Book.prototype.changeReadStatus = function(){
-    this.read = !this.read;
-}
+
 
 function addBookToLibrary(name, author, pages, genre, year,read ){
     let book = new Book(name, author, pages, genre, year, read);
